@@ -1,0 +1,614 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    font-family: 'glorynight';
+}
+
+p {
+    font-family: 'gotham';
+}
+
+
+
+/* Header and Banner part Css */
+.header_banner_part {
+    background-color: #0b253d;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    width: 13%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    position: relative;
+    padding: 0 0px 0 0;
+    transition: .5s all ease-in-out;
+    font-family: 'glorynight';
+}
+
+.navbar-nav .nav-item {
+    padding: 10px 11px;
+}
+
+.navbar-light .navbar-nav .nav-link.item_style::before {
+    content: " ";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: -webkit-fill-available;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff9e00;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #ff9e00;
+}
+
+
+/* Banner Part */
+.banner_part {
+    min-height: 77vh;
+    background-image: url(../images/banner\ bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 42%;
+    padding: 40px 0;
+}
+
+.banner_img {
+    position: relative;
+}
+
+.banner_span {
+    position: absolute;
+    top: 20%;
+    right: -300px;
+}
+
+.banner_span img {
+    width: 62%;
+}
+
+
+.banner_tex {
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+}
+
+
+.banner_content h1 {
+    font-family: 'glorynight';
+    color: #ff9e00;
+    font-size: 80px;
+}
+
+.banner_content p {
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+.banner_content form input[type="email"] {
+    font-family: 'gotham';
+    background: transparent;
+    border: 2px solid #ff9e00;
+    padding: 5px 10px;
+    outline: none;
+    color: #ff9e00;
+
+}
+
+.banner_content form input::placeholder {
+    font-family: 'gotham';
+}
+
+.banner_content form input[type="submit"] {
+    font-family: 'gotham';
+    background: #ff9e00;
+    border: 2px solid #ff9e00;
+    padding: 5px 20px;
+    margin-left: -5px;
+    color: #ffffff;
+}
+
+
+
+
+/* About Part CSS */
+.about_part {
+    background-color: #0b476c;
+    padding: 70px 0;
+    position: relative;
+}
+
+/* bottom left bg img */
+.about_part::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 100%;
+    background-image: url(../images/about\ left\ bg.png);
+    background-position: bottom left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* top right bg img */
+.about_part::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-image: url(../images/about\ right\ bg.png);
+    background-position: top right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.about-text h1 {
+    color: #ff9e00;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 80px;
+}
+
+.about-text p {
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+/* Features_part CSS */
+.features_part {
+    background-color: #0e334e;
+    padding: 150px 0 0px 0;
+    background-image: url(../images/features_part\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position-y: 69px;
+}
+
+.features_content {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features_item {
+    position: relative;
+}
+
+.features_item_bg {
+    padding: 24px 0 50px 32px;
+    position: relative;
+    background-image: url(../images/features_item_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 15%;
+}
+
+.features_item h2 {
+    font-family: 'glorynight';
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 45px;
+}
+
+.features_item p {
+    color: #ffffff;
+    position: relative;
+    margin-left: 15px;
+}
+
+.features_item p::before {
+    content: " ";
+    position: absolute;
+    left: -12px;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #fcc42f;
+}
+
+
+
+
+/* Work Part CSS */
+.work_part {
+    padding: 128px 0 145px 0;
+    position: relative;
+    z-index: 9999;
+
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e334e+0,103c59+100 */
+    background: rgb(14, 51, 78);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(14, 51, 78, 1) 0%, rgba(16, 60, 89, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(14, 51, 78, 1) 0%, rgba(16, 60, 89, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(14, 51, 78, 1) 0%, rgba(16, 60, 89, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e334e', endColorstr='#103c59', GradientType=0);
+    /* IE6-9 */
+}
+
+/* left bg img */
+.work_part::after {
+    content: " ";
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/work\ left\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: top left;
+    z-index: -1;
+}
+
+/* right bg img */
+.work_part::before {
+    content: " ";
+    position: absolute;
+    right: 0%;
+    bottom: 15px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/work\ right\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 37%;
+    background-position: bottom right;
+    z-index: -1;
+}
+
+.work_text {
+    padding: inherit;
+}
+
+.work_text h1 {
+    color: #ff9e00;
+    font-size: 60px;
+}
+
+.work_text p {
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.work_text button {
+    font-family: 'gotham';
+    padding: 10px 30px 10px 45px;
+    background-color: #bf6d00;
+    border: 2px solid #bf6d00;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    transition: .6s all ease-in-out;
+}
+
+.work_text button:hover {
+    background: transparent;
+    color: #ff9e00;
+}
+
+.work_btn_icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: .6s all ease-in-out;
+
+}
+
+.work_text button:hover .work_btn_icon {
+    color: #ff9e00;
+}
+
+.demo_video {
+    width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+.demo_video img {
+    border-radius: 20px;
+}
+
+.video_play_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.video_play_icon i {
+    background-color: #fdc52e;
+    border-radius: 100%;
+}
+
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Interface Part CSS */
+.interface_part {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#103c59+0,134e70+100 */
+
+    background: rgb(16, 60, 89);
+    /* Old browsers */
+
+    background: -moz-linear-gradient(top, rgba(16, 60, 89, 1) 0%, rgba(19, 78, 112, 1) 100%);
+    /* FF3.6-15 */
+
+    background: -webkit-linear-gradient(top, rgba(16, 60, 89, 1) 0%, rgba(19, 78, 112, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+
+    background: linear-gradient(to bottom, rgba(16, 60, 89, 1) 0%, rgba(19, 78, 112, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#103c59', endColorstr='#134e70', GradientType=0);
+    /* IE6-9 */
+
+    position: relative;
+
+    padding: 25px 0 70px 0;
+
+    z-index: 999999;
+}
+
+.interface_part::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/interface_part\ bg\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.interface_part_header h1 {
+    text-align: center;
+    color: #ff9e00;
+    margin-bottom: 60px;
+    font-size: 80px;
+}
+
+.interface_owl .owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.interface_owl .owl-dot {
+    margin: 0 5px;
+}
+
+.interface_owl .owl-dot span {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #89a6b6;
+}
+
+.interface_owl .active span {
+    background-color: #fec52e;
+}
+
+/* .interface_item owl */
+
+.interface_item {
+    background: #ff9e00;
+    height: 468px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.interface_item::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 458px;
+    width: 100%;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+
+.interface_item .owl-dots {
+
+    margin-top: 15px;
+}
+
+.interface_item .owl-dot span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    border-radius: 0;
+    background: #ff9e00;
+}
+
+.interface_item .active span {
+    height: 4px;
+}
+
+.interface_item .owl-prev {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-bottom: 1px solid #000 !important;
+}
+
+.interface_item .owl-prev span {
+    color: red;
+}
+
+.interface_item .owl-next {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.interface_item .owl-next span {
+    border-bottom: 1px solid red;
+}
+
+
+.interface_item h5 {
+    font-family: 'glorynight';
+    margin: 45px 0 30px;
+}
+
+.interface_item p {
+    font-size: 15px;
+}
+
+
+
+/* Footer Part CSS */
+.footer_part {
+    background-image: url(../images/footer\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer_part::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#277fa9+0,277fa9+18,277fa9+100&1+0,0.55+18,0.18+100 */
+    background: -moz-linear-gradient(left, rgba(39, 127, 169, 1) 0%, rgba(39, 127, 169, 0.55) 18%, rgba(39, 127, 169, 0.18) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(39, 127, 169, 1) 0%, rgba(39, 127, 169, 0.55) 18%, rgba(39, 127, 169, 0.18) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(39, 127, 169, 1) 0%, rgba(39, 127, 169, 0.55) 18%, rgba(39, 127, 169, 0.18) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#277fa9', endColorstr='#2e277fa9', GradientType=1);
+    /* IE6-9 */
+
+
+
+}
+
+.footer_content h1 {
+    color: #ff9e00;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.footer_content p {
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.footer_content button {
+    font-family: 'gotham';
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: -48px;
+}
+
+.footer_content button img {
+    width: 70%;
+}
+
+
+.copyright_part {
+    padding: 40px 0;
+    background-color: #176084f1;
+
+}
+
+.copyright_part p {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* togger icon css */
+
+#toggle {
+    width: 28px;
+    height: 10px;
+    margin: 0px auto;
+  }
+  
+  #toggle div {
+    width: 100%;
+    height:3px;
+    background: white;
+    margin: 6px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  
+  #toggle.on .one {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  #toggle.on .two {
+    opacity: 0;
+  }
+  
+  #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
